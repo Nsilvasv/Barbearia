@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.navbar{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgb(117, 117, 117);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+
+.nav-link{
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    color: darkorange;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:768px) {
+    .hamburguer{
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 45px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        
+        
+    }
+
+    .nav-item{
+        margin: 10px 0;
+        
+    }
+
+    a{
+        color: white;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+main{
+    background-image: url(/img/download.webp);
+  
+   
+
+}
+
+.cabecalhos-services{
+    padding: 7rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.cabecalhos-services h1{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.flex-container-services{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.services{
+    text-align: center;
+    justify-content: center;
+    margin: 0 2rem;
+    padding: 1rem;
+    width: 250px;
+    height: 400px;
+
+}
+
+
+
+.ft-services{
+    border-radius: 50%;
+    border: 2px solid rgb(148, 109, 27);
+    width: 200px;
+    height: 200px;
+}
+
+
+.services h1{
+    font-size: 30px;
+    margin: 1rem auto;
+    color: rgb(240, 178, 10);
+   
+}
+
+.services p{
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 1rem;
+}
+
+.preco-services{
+    font-size: 22px;
+    font-weight: bold;
+    margin:1rem
+}
+
+.teste{
+    width: 30px;
+    height:60px;
+    align-items: center;
+}
+
+.foter{
+    background-color: rgb(117, 117, 117);
+    padding: 0.5rem 0;
+
+    text-align: center;
+}
+
+.fa-brands{
+    padding: 15px 7px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+}
