@@ -110,7 +110,7 @@ a{
 }
 
 main{
-    background-image: url(/img/download.webp);
+    background-image: url(../../img/download.webp)
   
    
 
