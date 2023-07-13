@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="agenda.css" />
     <title>Barbearia</title>
   </head>
   <body>
@@ -13,15 +13,9 @@
         <nav class="navbar">
             <a href="../../index.html" class="logo"> JacaBarber </a>
             <ul class="nav-menu">
-<<<<<<< HEAD:pages/cadastro/index.html
-                <li class="nav-item"> <a href="/index.html" class="nav-link" >Home</a> </li>
-                <li class="nav-item"> <a href="/pages/serviços/index.html" class="nav-link" >Serviços</a> </li>
-                <li class="nav-item"> <a href="/pages/login/index.html" class="nav-link" >Login</a> </li>
-=======
                 <li class="nav-item"> <a href="../../index.html" class="nav-link" >Home</a> </li>
-                <li class="nav-item"> <a href="../serviços/servicos.html" class="nav-link" >Serviços</a> </li>
+                <li class="nav-item"> <a href="../servicos.html" class="nav-link" >Serviços</a> </li>
                 <li class="nav-item"> <a href="../login/login.html" class="nav-link" >Login</a> </li>
->>>>>>> be8706f (rotas das páginas modificadas):pages/cadastro/cadastro.html
             </ul>
 
             <div class="hamburguer">
@@ -35,12 +29,12 @@
     <main>
         <div class="container">
             <div class="title">
-              <h2>Criar Uma Conta</h2>
+              <h2>Agende seu horário</h2>
             </div>
       
             <form id="form" class="form">
               <div class="form-control">
-                <label for="username">Nome de usuário</label>
+                <label for="username">Nome</label>
                 <input type="text" id="username" placeholder="Digite seu nome de usuário..." />
 
                 <small>Mensagem de erro</small>
@@ -54,15 +48,22 @@
               </div>
       
               <div class="form-control">
-                <label for="password">Senha</label>
-                <input type="password" id="password" placeholder="Digite sua senha..." />
+                <label for="servico">Serviço</label>
+                <select name="" id="servico">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="text">Cabelo</option>
+                    <option value="text">Barba</option>
+                    <option value="text">Pezinho</option>
+                    <option value="text">Cabelo + Barba</option>
+                </select>
+
 
                 <small>Mensagem de erro</small>
               </div>
       
               <div class="form-control">
-                <label for="password-confirmation">Confirmação de senha</label>
-                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..." />
+                <label for="data"></label>
+                <input type="date" id="data" />
              
                 <small>Mensagem de erro</small>
               </div>
@@ -75,7 +76,7 @@
 
   
 
-    <script src="../../js/cadastro.js"></script>
+    <script src="../../js/agenda.js"></script>
   </body>
 </html>
 
