@@ -10,10 +10,13 @@
     font-size: 30px;
     font-weight: 900;
     color: white;
+    margin-left: 60px;
 }
+
 
 header{
    background-image: url(img/fundo-services.jpg);
+   height: 100vh
 }
 
 li{
@@ -27,27 +30,19 @@ a{
 }
 
 .navbar{
-    min-height: 80px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 70px;
-    
 }
 
 .nav-menu{
     display: flex;
     align-items: center;
     gap: 60px;
+    margin-right: 60px;
 }
 
-.nav-link{
-    transition: 0.5s ease;
-}
-
-.nav-link:hover{
-    color: darkorange;
-}
 
 .hamburguer{
     display: none;
@@ -59,12 +54,12 @@ a{
     width: 28px;
     height: 3px;
     border-radius: 2px;
-    margin: 5px auto;
+    margin: 5px 30px 0px 30px;
     background-color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:700px) {
     .hamburguer{
         display: block;
     }
@@ -105,23 +100,22 @@ a{
 }
 
 .banner{
-    height: 480px;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding: 7rem 0;
 }
 
 
 .textos-banner{
-    width: 330px;
+    width: 320px;
     height: 280px;
     justify-content: center;
-    margin: 20px 70px;
-   
+    margin: 20px 0px 0px 70px;
 }
 
-/*olha aqui*/
+
 .titulo-banner{
     color: rgb(165, 126, 94); 
+    font-size: 40px;
 }
 
 .textos-banner p{
@@ -142,7 +136,7 @@ a{
 
 .inner-headings span{
     position: relative;
-    color: rgb(255, 196, 0);
+    color: rgb(255, 230, 0);
     animation: animation 10s ease infinite;
 }
 
@@ -177,7 +171,7 @@ a{
 
 .button-agendar{
     padding: 2px 8px;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     border-radius: 12px;
     color: rgb(0, 0, 0);
     font-size: 23px;
@@ -195,9 +189,63 @@ a{
     color:white
 }
 
+@media screen and (max-width:450px) {
+
+
+    .logo{
+        margin-left: 45px;
+    }
+
+
+    .textos-banner{
+        width: 280px;
+        margin: 20px 0px 0px 45px;
+    }
+
+    .titulo-banner{
+        font-size: 35px;
+    }
+
+    .inner-headings{
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:350px) {
+
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .button-agendar{
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .textos-banner{
+        width: 250px;
+        margin: 20px 0px 0px 30px;
+    }
+
+    .titulo-banner{
+        font-size: 30px;
+    }
+
+    .textos-banner p{
+        font-size: 20px;
+    }
+
+    .inner-headings{
+        font-size: 30px;
+    }
+}
+
 
 .flex-container{
-    background-color: rgb(199, 109, 0);
+    background-color: rgb(150, 82, 0);
     opacity: 0,5;
     width: 100%;
     display: flex;
@@ -211,18 +259,14 @@ a{
 
 
 #sobre{
-    width: 440px;
+    width: 410px;
     text-align:center;
     color: rgb(255, 255, 255);
     padding: 2rem;
-
-
 }
 
 #sobre h1{
     font-size: 40px;
-    
-
 }
 
 #sobre p{
@@ -236,10 +280,22 @@ a{
     color: rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 390px) {
+    .flex-container{
+        padding: 1rem 0;
+    }
+
+    .sobre{
+        
+        padding: 1rem 0;
+    }
+
+}
+
 .cabecalho-services{
     text-align: center;
     margin-top: 3rem;
-    color: rgb(204, 150, 2);
+    color: rgb(165, 126, 94);
 }
 
 .container-services{
@@ -257,14 +313,12 @@ a{
     margin: 3rem 3rem;
     height: 450px;
     box-sizing: border-box;
-    border-color: black;
+    border-color: rgb(153, 153, 153);
     border-width: 2px;
     border-style: solid;
     border-radius: 5%;
     box-shadow: 5px 5px 9px 5px#b6b6b6;
 }
-
-
 
 .card h2{
     font-size: 30px;
@@ -280,15 +334,29 @@ a{
 .prod-preco{
     font-size: 22px;
     font-weight: bold;
-    margin:1rem
+    margin:2rem 0;
 
 }
 
 .card:hover{
     transform: scale(1.1);
-    border-color: rgb(245, 230, 26);
 }
 
+@media screen and (max-width: 1217px) {
+    .card{
+        width: 310px;
+        text-align: center;
+        justify-content: center;
+        margin: 3rem 2rem;
+        height: 450px;
+        box-sizing: border-box;
+        border-color: rgb(153, 153, 153);
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 5%;
+        box-shadow: 5px 5px 9px 5px#b6b6b6;
+    }
+}
 
 .foter{
     text-align: center;
