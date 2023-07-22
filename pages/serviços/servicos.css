@@ -13,7 +13,6 @@
 }
 
 
-
 li{
     list-style: none;
 }
@@ -110,14 +109,12 @@ a{
 }
 
 main{
-    background-image: url(../../img/download.webp)
-  
-   
+    background-image: url(../../img/download.webp)   
 
 }
 
 .cabecalhos-services{
-    padding: 7rem;
+    padding: 7rem 1rem;
     text-align: center;
     justify-content: center;
 }
@@ -127,16 +124,11 @@ main{
     color: rgb(255, 255, 255);
 }
 
-
-
-
 .flex-container-services{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 
 .services{
@@ -145,8 +137,6 @@ main{
     margin: 0 2rem;
     padding: 1rem;
     width: 250px;
-    height: 400px;
-
 }
 
 .ft-services{
@@ -155,13 +145,10 @@ main{
     width: 200px;
     height: 200px;
 }
-
-
 .services h1{
     font-size: 30px;
     margin: 1rem auto;
     color: rgb(240, 178, 10);
-   
 }
 
 .services p{
@@ -178,11 +165,6 @@ main{
     margin:1rem
 }
 
-.teste{
-    width: 30px;
-    height:60px;
-    align-items: center;
-}
 
 .foter{
     background-color: rgb(117, 117, 117);
